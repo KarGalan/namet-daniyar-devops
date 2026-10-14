@@ -1,0 +1,16 @@
+services:
+  student-app:
+    build: .
+    image: namet-daniyar-devops:latest
+    container_name: namet-daniyar-container
+
+    ports:
+      - "8080:8080"
+
+    environment:
+      STUDENT_NAME: "Daniyar"
+      STUDENT_SURNAME: "Namet"
+      STUDENT_GROUP: "IT2-2312 SE"
+      STUDENT_ID: "37056"
+
+    restart: unless-stopped
