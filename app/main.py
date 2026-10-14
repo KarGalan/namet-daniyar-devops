@@ -53,6 +53,16 @@ class StudentHandler(BaseHTTPRequestHandler):
         elif self.path == "/":
             content = render_page().encode("utf-8")
             content_type = "text/html; charset=utf-8"
+            
+        elif self.path == "/about":
+            content = (
+                "DevOps Student Project\n"
+                "Student: Daniyar Namet\n"
+                "Group: IT2-2312 SE\n"
+                "Student ID: 37056\n"
+                "Technologies: Linux, Git, GitHub, Docker, Jenkins\n"
+            ).encode("utf-8")
+            content_type = "text/plain; charset=utf-8"
 
         else:
             self.send_error(404, "Not Found")
