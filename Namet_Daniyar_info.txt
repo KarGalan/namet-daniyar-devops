@@ -1,0 +1,5 @@
+Name: Daniyar
+Surname: Namet
+Group: IT2-2312 SE
+Student ID: 37056
+Course: DevOps
