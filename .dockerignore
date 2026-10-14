@@ -1,0 +1,10 @@
+.git
+.gitignore
+.env
+*.log
+backup/
+__pycache__/
+*.pyc
+.venv/
+*.swp
+*.swo
